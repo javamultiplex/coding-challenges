@@ -18,7 +18,7 @@ public class CustomerService {
         this.customerRepository = customerRepository;
     }
 
-    public Customer getCustomer(Integer customerId){
+    public Customer getCustomer(Integer customerId) {
         return customerRepository.getCustomer(customerId);
     }
 }

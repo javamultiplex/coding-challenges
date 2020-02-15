@@ -17,18 +17,18 @@ public class CustomerRepository {
 
     private static Map<Integer, Customer> map = new HashMap<>();
 
-    private final ProductApiClient productApiClient;
-
-    public CustomerRepository(ProductApiClient productApiClient) {
-        this.productApiClient = productApiClient;
-    }
-
     static {
         map.put(1, new Customer(1, "Rohit Agarwal", "Gurgaon"));
         map.put(2, new Customer(2, "Bhavna Agarwal", "Rudrapur"));
         map.put(3, new Customer(3, "Arpit Kumar", "Delhi"));
         map.put(4, new Customer(4, "Ram Kumar", "Bengaluru"));
         map.put(5, new Customer(5, "Ravi Kishan", "Pune"));
+    }
+
+    private final ProductApiClient productApiClient;
+
+    public CustomerRepository(ProductApiClient productApiClient) {
+        this.productApiClient = productApiClient;
     }
 
     public Customer getCustomer(Integer customerId) {

@@ -35,14 +35,14 @@ public class ProductApiClient {
 
     public ProductList getProducts(Integer customerId) {
         ResponseEntity<ProductList> responseEntity = restTemplate
-                .exchange(apiUrl, HttpMethod.GET,new HttpEntity<>(buildHeaders()),ProductList.class, customerId);
+                .exchange(apiUrl, HttpMethod.GET, new HttpEntity<>(buildHeaders()), ProductList.class, customerId);
         return responseEntity.getBody();
     }
 
     private HttpHeaders buildHeaders() {
-        HttpHeaders httpHeaders=new HttpHeaders();
+        HttpHeaders httpHeaders = new HttpHeaders();
         String usernameColonPassword = username + ":" + password;
-        String headerValue="Basic "+ Base64.getEncoder().encodeToString(usernameColonPassword.getBytes());
+        String headerValue = "Basic " + Base64.getEncoder().encodeToString(usernameColonPassword.getBytes());
         httpHeaders.add(HttpHeaders.AUTHORIZATION, headerValue);
         return httpHeaders;
     }
