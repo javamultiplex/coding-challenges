@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author Rohit Agarwal on 15/02/20 9:16 pm
+ * @copyright www.javamultiplex.com
+ */
 @RestController
 @RequestMapping("/api/v1")
 public class CustomerResource {

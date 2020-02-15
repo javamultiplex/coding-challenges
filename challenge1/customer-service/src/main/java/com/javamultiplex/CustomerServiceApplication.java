@@ -5,6 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * @author Rohit Agarwal on 15/02/20 9:16 pm
+ * @copyright www.javamultiplex.com
+ */
 @SpringBootApplication
 public class CustomerServiceApplication {
 

@@ -5,6 +5,10 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+/**
+ * @author Rohit Agarwal on 15/02/20 9:16 pm
+ * @copyright www.javamultiplex.com
+ */
 @Getter
 @NoArgsConstructor
 public class Product implements Serializable {

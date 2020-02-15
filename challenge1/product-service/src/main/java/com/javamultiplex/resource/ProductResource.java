@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * @author Rohit Agarwal on 15/02/20 9:16 pm
+ * @copyright www.javamultiplex.com
+ */
 @RestController
 @RequestMapping("/api/v1")
 public class ProductResource {

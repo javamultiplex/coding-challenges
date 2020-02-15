@@ -5,6 +5,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+/**
+ * @author Rohit Agarwal on 15/02/20 9:16 pm
+ * @copyright www.javamultiplex.com
+ */
 @Repository
 public class ProductRepository {
 

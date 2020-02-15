@@ -12,12 +12,16 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.Base64;
 
+/**
+ * @author Rohit Agarwal on 15/02/20 9:16 pm
+ * @copyright www.javamultiplex.com
+ */
 @Component
 public class ProductApiClient {
 
     private final RestTemplate restTemplate;
 
-    @Value("${product.api.root.url}")
+    @Value("${product.api.url}")
     private String apiUrl;
     @Value("${product.api.user.name}")
     private String username;
