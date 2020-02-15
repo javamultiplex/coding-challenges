@@ -23,7 +23,7 @@ public class ProductResource {
     }
 
     @GetMapping("/customer/{customerId}/products")
-    public ProductList getProducts(@PathVariable int customerId) {
+    public ProductList getProducts(@PathVariable Integer customerId) {
         List<Product> products = productService.getProducts(customerId);
         return new ProductList(products);
     }

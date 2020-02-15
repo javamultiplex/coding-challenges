@@ -23,7 +23,7 @@ public class ProductRepository {
         map.put(5, Arrays.asList(product1, product2, product5));
     }
 
-    public List<Product> getProducts(int customerId) {
+    public List<Product> getProducts(Integer customerId) {
         if (map.containsKey(customerId)) {
             return map.get(customerId);
         } else {
