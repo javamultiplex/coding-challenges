@@ -1,3 +1,11 @@
+# Circut Breaker Pattern
+
+## What to do when circut breaks?
+1) Throw an Error
+2) Return a fallback "default" response.
+3) Save previous response (cache) and use that when possible.
+
+
 # Questions
 
 ## 1) How to design database in microservice architecture?
