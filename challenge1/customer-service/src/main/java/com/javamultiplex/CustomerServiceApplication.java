@@ -5,7 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
+
+import java.sql.Time;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author Rohit Agarwal on 15/02/20 9:16 pm
@@ -22,7 +26,10 @@ public class CustomerServiceApplication {
     @Bean
     @LoadBalanced
     public RestTemplate restTemplate() {
-        return new RestTemplate();
+        HttpComponentsClientHttpRequestFactory httpComponentsClientHttpRequestFactory=new HttpComponentsClientHttpRequestFactory();
+        httpComponentsClientHttpRequestFactory.setConnectTimeout(3000);
+        //httpComponentsClientHttpRequestFactory.setReadTimeout(6000);
+        return new RestTemplate(httpComponentsClientHttpRequestFactory);
     }
 
 }
