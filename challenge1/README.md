@@ -1,4 +1,4 @@
-# Service Discovery ( Eureka Technology)
+# Service Discovery Pattern ( Eureka Technology)
 1. There is one Eureka Server and all Microservices workes as a Eureka Client.
 1. All Eureka clients registered themselves with Eureka Server.
 1. All Eureka clients send heart beats to Eureka Server to let Eureka Server know that they are alive.
