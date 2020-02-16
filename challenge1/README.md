@@ -1,4 +1,4 @@
-# Circut Breaker Pattern
+# Circut Breaker Pattern (Hystrix Technology)
 
 ## Why Circut Breaker?
 1) Failing fast
