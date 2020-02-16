@@ -1,3 +1,10 @@
+# Service Discovery ( Eureka Technology)
+1. There is one Eureka Server and all Microservices workes as a Eureka Client.
+1. All Eureka clients registered themselves with Eureka Server.
+1. All Eureka clients send heart beats to Eureka Server to let Eureka Server know that they are alive.
+1. We just need to add Eureka client dependency in microservice and that's it.
+1. We don't need to hardcode other microservice url for communication, application name suffice.
+
 # Circut Breaker Pattern (Hystrix Technology)
 
 ## Why Circut Breaker?
