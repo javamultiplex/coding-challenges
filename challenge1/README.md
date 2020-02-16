@@ -1,5 +1,10 @@
 # Circut Breaker Pattern
 
+## When does the circut breaks?
+1) Last n requests to consider for decision.
+2) How many of should fail?
+3) Timeout duration?
+
 ## What to do when circut breaks?
 1) Throw an Error
 2) Return a fallback "default" response.
