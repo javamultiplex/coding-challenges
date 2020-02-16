@@ -27,6 +27,11 @@
 
 > https://github.com/Netflix/Hystrix/wiki/Configuration
 
+# Bulk Head Pattern
+
+- Create Seperate thead pool for each microservice.
+- Can work with Hysterix also.
+
 # Questions
 
 ## 1) How to design database in microservice architecture?
