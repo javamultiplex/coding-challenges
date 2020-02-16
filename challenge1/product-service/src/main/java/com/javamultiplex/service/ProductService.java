@@ -22,11 +22,11 @@ public class ProductService {
 
     public List<Product> getProducts(Integer customerId) {
         //Added to get java.net.SocketTimeoutException: Read timed out in Customer Service
-        try{
-            Thread.sleep(4000);
-        }catch (InterruptedException e){
-            e.printStackTrace();
-        }//
+//        try{
+//            Thread.sleep(4000);
+//        }catch (InterruptedException e){
+//            e.printStackTrace();
+//        }//
         return productRepository.getProducts(customerId);
     }
 }

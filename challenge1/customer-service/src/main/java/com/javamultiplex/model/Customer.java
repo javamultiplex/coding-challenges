@@ -3,6 +3,7 @@ package com.javamultiplex.model;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -14,6 +15,7 @@ import java.util.List;
  */
 @Getter
 @NoArgsConstructor
+@ToString
 public class Customer implements Serializable {
     private static final long serialVersionUID = -3195573264049448013L;
     private Integer id;

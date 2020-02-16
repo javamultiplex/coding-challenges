@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,4 +16,11 @@ import java.util.List;
 public class ProductList implements Serializable {
     private static final long serialVersionUID = 2215259135638751008L;
     private List<Product> products;
+
+    public List<Product> getProducts() {
+        if (products==null){
+            products=new ArrayList<>();
+        }
+        return products;
+    }
 }
