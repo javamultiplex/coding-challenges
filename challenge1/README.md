@@ -1,24 +1,24 @@
 # Circut Breaker Pattern (Hystrix Technology)
 
 ## Why Circut Breaker?
-1) Failing fast
-2) Fallback functionality
-3) Automatic recovery
+1. Failing fast
+1. Fallback functionality
+1. Automatic recovery
 
 ## When does the circut breaks?
-1) Last n requests to consider for decision.
-2) How many of should fail?
-3) Timeout duration?
+1. Last n requests to consider for decision.
+1. How many of should fail?
+1. Timeout duration?
 
 ## What to do when circut breaks?
-1) Throw an Error
-2) Return a fallback "default" response.
-3) Save previous response (cache) and use that when possible.
+1. Throw an Error
+1. Return a fallback "default" response.
+1. Save previous response (cache) and use that when possible.
 
 ## When to resume requests?
-1) How long to wait before circut breaker tries again?
+1. How long to wait before circut breaker tries again?
 
-Note : https://github.com/Netflix/Hystrix/wiki/Configuration
+> https://github.com/Netflix/Hystrix/wiki/Configuration
 
 # Questions
 
