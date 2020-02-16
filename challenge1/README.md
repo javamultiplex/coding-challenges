@@ -1,5 +1,10 @@
 # Circut Breaker Pattern
 
+## Why Circut Breaker?
+1) Failing fast
+2) Fallback functionality
+3) Automatic recovery
+
 ## When does the circut breaks?
 1) Last n requests to consider for decision.
 2) How many of should fail?
