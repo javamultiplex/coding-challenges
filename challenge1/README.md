@@ -18,6 +18,8 @@
 ## When to resume requests?
 1) How long to wait before circut breaker tries again?
 
+Note : https://github.com/Netflix/Hystrix/wiki/Configuration
+
 # Questions
 
 ## 1) How to design database in microservice architecture?
