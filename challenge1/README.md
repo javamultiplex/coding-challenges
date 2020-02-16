@@ -15,6 +15,8 @@
 2) Return a fallback "default" response.
 3) Save previous response (cache) and use that when possible.
 
+## When to resume requests?
+1) How long to wait before circut breaker tries again?
 
 # Questions
 
